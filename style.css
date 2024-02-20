@@ -1,0 +1,164 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Design Start */
+
+
+/* header size */
+header{
+    height: 45px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+/* logo */
+header .logo{
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+/* navber */
+header .nav ul {
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;  
+}
+/* navber 1st list */
+header .nav ul li{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+/* navberlist style */
+header .nav ul li a{
+    text-decoration: none; 
+    color: white; 
+     
+}
+/* navber 2nd list */
+header .nav ul  ul {
+   display: none; 
+}
+/* 1st list hover effect */
+header .nav ul li a:hover{
+    color: aqua;
+}
+/* 2nd list block */
+.nav ul li:hover > ul{
+    display:block;
+}
+/* 2nd list colour & position */
+.nav ul li ul{
+    color: rgb(255, 255, 255);
+    position:fixed;
+}
+/* 2nd list block design */
+.nav ul li ul li{
+    background-color: gray;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: small;
+}
+/* logo animation */
+.logo{
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.logo:hover{
+    transform:scale(0.7);
+    color: cyan;
+}
+/* Header design end */
+
+.post{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    align-items: center;
+    justify-content: space-between;
+}
+.post .thumbnail{
+    margin: 40px;
+    margin-top: 3opx;
+    padding-left: 50px;
+
+}
+.post .thumbnail h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* header mobile view */
+@media ( max-width:652px){
+    header{
+        height: 60px;
+        font-size: 10px;
+        font-weight: normal;
+        position: sticky;
+    }
+    header .nav ul{
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header .nav{
+        background-color: rgb(90, 90, 89);
+        width:100% ;
+    }
+    header .logo{
+        font-size: 39px;
+        }
+    .nav ul li ul .gh{
+        background-color: rgb(90, 90, 89);
+    }
+    .post{
+        margin-top: 40px;
+    }
+    .post .thumbnail{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    
+} 
+
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
+    text-align: center;
+}
+footer h1{
+    font-size: 40px;
+    padding-bottom: -10px;
+    text-transform: uppercase;
+    background-color: gray;
+    display: inline-block;
+    width: 100%;
+}
+footer p{
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(165, 243, 243);
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
